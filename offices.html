@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>加盟事業所一覧・検索｜児発連</title>
+  <meta name="description" content="北海道内の児童発達支援・放課後等デイサービス加盟事業所を、地区・サービス種別・キーワードから検索できます。札幌・旭川・その他地区に対応。">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="site-header" class="site-header"></header>
+
+  <main>
+    <section class="hero hero--compact" aria-label="ページ見出し">
+      <div class="hero__inner">
+        <h1 class="hero__title">加盟事業所一覧・検索</h1>
+        <p class="hero__lead">北海道内の児童発達支援・放課後等デイサービス事業所を、地区・サービス種別からお探しいただけます。</p>
+      </div>
+    </section>
+
+    <div class="page-wrap">
+      <div class="container layout-2col">
+        <div class="main-col">
+          <nav class="breadcrumb" aria-label="パンくずリスト">
+            <ol>
+              <li><a href="index.html">HOME</a></li>
+              <li>加盟事業所一覧・検索</li>
+            </ol>
+          </nav>
+
+          <section class="reveal">
+            <div class="page-title">
+              <h1>加盟事業所を探す</h1>
+              <p>児発連に加盟する事業所の情報を掲載しています。詳細は各事業所ページをご覧ください。</p>
+            </div>
+
+            <form id="office-filter" class="filter-bar" action="#" method="get">
+              <label>
+                地区
+                <select class="form-select" name="region">
+                  <option value="">すべて</option>
+                  <option value="札幌">札幌</option>
+                  <option value="旭川">旭川</option>
+                  <option value="その他">その他</option>
+                </select>
+              </label>
+              <label>
+                サービス種別
+                <select class="form-select" name="service">
+                  <option value="">すべて</option>
+                  <option value="児発">児童発達支援</option>
+                  <option value="放デイ">放課後等デイサービス</option>
+                  <option value="その他">その他</option>
+                </select>
+              </label>
+              <label>
+                キーワード
+                <input class="form-control" type="search" name="q" placeholder="事業所名・住所など">
+              </label>
+              <button class="btn btn-primary" type="submit">検索</button>
+            </form>
+
+            <p id="office-empty" class="alert" hidden>条件に一致する事業所が見つかりませんでした。検索条件を変更してお試しください。</p>
+
+            <table id="office-list" class="data-table">
+              <thead>
+                <tr>
+                  <th>事業所名</th>
+                  <th>地区</th>
+                  <th>サービス</th>
+                  <th>所在地</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr data-office data-region="札幌" data-service="放デイ">
+                  <td>にこにこルーム中央</td>
+                  <td>札幌</td>
+                  <td><span class="tag tag-hou">放デイ</span></td>
+                  <td>札幌市中央区南1条西5丁目</td>
+                  <td><a href="office-detail.html">詳細</a></td>
+                </tr>
+                <tr data-office data-region="札幌" data-service="児発">
+                  <td>さくら療育センター</td>
+                  <td>札幌</td>
+                  <td><span class="tag tag-ji">児発</span></td>
+                  <td>札幌市北区北24条西7丁目</td>
+                  <td><a href="office-detail.html">詳細</a></td>
+                </tr>
+                <tr data-office data-region="札幌" data-service="児発 放デイ">
+                  <td>みらいキッズ豊平</td>
+                  <td>札幌</td>
+                  <td><span class="tag tag-ji">児発</span> <span class="tag tag-hou">放デイ</span></td>
+                  <td>札幌市豊平区平岸1条5丁目</td>
+                  <td><a href="office-detail.html">詳細</a></td>
+                </tr>
+                <tr data-office data-region="札幌" data-service="放デイ">
+                  <td>ひまわり放デイ白石</td>
+                  <td>札幌</td>
+                  <td><span class="tag tag-hou">放デイ</span></td>
+                  <td>札幌市白石区本通16丁目</td>
+                  <td><a href="office-detail.html">詳細</a></td>
+                </tr>
+                <tr data-office data-region="旭川" data-service="児発">
+                  <td>あさひ療育センター</td>
+                  <td>旭川</td>
+                  <td><span class="tag tag-ji">児発</span></td>
+                  <td>旭川市1条通8丁目</td>
+                  <td><a href="office-detail.html">詳細</a></td>
+                </tr>
+                <tr data-office data-region="旭川" data-service="放デイ">
+                  <td>北の杜放課後クラブ</td>
+                  <td>旭川</td>
+                  <td><span class="tag tag-hou">放デイ</span></td>
+                  <td>旭川市神楽4条7丁目</td>
+                  <td><a href="office-detail.html">詳細</a></td>
+                </tr>
+                <tr data-office data-region="その他" data-service="児発">
+                  <td>函館みなと児童発達支援</td>
+                  <td>その他</td>
+                  <td><span class="tag tag-ji">児発</span></td>
+                  <td>函館市本町12番地</td>
+                  <td><a href="office-detail.html">詳細</a></td>
+                </tr>
+                <tr data-office data-region="その他" data-service="放デイ">
+                  <td>帯広ステップ放デイ</td>
+                  <td>その他</td>
+                  <td><span class="tag tag-hou">放デイ</span></td>
+                  <td>帯広市西18条南2丁目</td>
+                  <td><a href="office-detail.html">詳細</a></td>
+                </tr>
+                <tr data-office data-region="その他" data-service="その他">
+                  <td>北見こども支援ステーション</td>
+                  <td>その他</td>
+                  <td><span class="tag tag-other">相談支援</span></td>
+                  <td>北見市大通西3丁目</td>
+                  <td><a href="office-detail.html">詳細</a></td>
+                </tr>
+              </tbody>
+            </table>
+
+            <div class="panel panel--note" style="margin-top:20px;">
+              <p class="lead-copy" style="margin:0;">掲載情報は各事業所より提供いただいた内容に基づきます。最新の空き状況・受入条件等は、直接事業所へお問い合わせください。</p>
+            </div>
+          </section>
+        </div>
+
+        <div id="site-sidebar"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer id="site-footer" class="site-footer"></footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

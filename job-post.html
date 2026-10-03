@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>求人投稿（加盟事業所向け）｜児発連</title>
+  <meta name="description" content="児発連加盟事業所向けの求人情報投稿フォーム。事務局確認・承認後にポータルサイトへ公開されます。">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="site-header" class="site-header"></header>
+
+  <main>
+    <section class="hero hero--compact" aria-label="ページ見出し">
+      <div class="hero__inner">
+        <h1 class="hero__title">求人投稿</h1>
+        <p class="hero__lead">加盟事業所向けの求人情報掲載依頼フォームです。</p>
+      </div>
+    </section>
+
+    <div class="page-wrap">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="パンくずリスト">
+          <ol>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="jobs.html">求人・人材</a></li>
+            <li>求人投稿</li>
+          </ol>
+        </nav>
+
+        <div class="page-title">
+          <h1>求人情報の掲載依頼</h1>
+          <p>児発連加盟事業所の方が、求人情報の掲載を依頼するためのフォームです。</p>
+        </div>
+
+        <section class="reveal" style="max-width:760px;margin:0 auto;">
+          <div class="sec-head sec-head--sage">
+            <h2>掲載までの流れ</h2>
+          </div>
+          <ol class="steps">
+            <li>
+              <h3>事業所による投稿</h3>
+              <p>本フォームより求人情報を送信してください。必須項目をすべてご記入ください。</p>
+            </li>
+            <li>
+              <h3>事務局による確認・承認</h3>
+              <p>児発連事務局にて内容を確認し、問題がなければ承認します。修正が必要な場合はご連絡いたします。</p>
+            </li>
+            <li>
+              <h3>ポータルサイトへ公開</h3>
+              <p>承認後、求人一覧・検索ページに掲載されます。掲載終了日を過ぎると自動的に非公開となります。</p>
+            </li>
+          </ol>
+
+          <div class="panel" style="margin-top:28px;">
+            <div data-form-msg class="alert" hidden role="status"></div>
+
+            <form class="form-stack" data-validate data-success="求人投稿を受け付けました。事務局にて内容を確認のうえ、承認後に公開いたします。通常3〜5営業日以内にご連絡いたします。（デモ画面）">
+              <div class="form-row">
+                <label class="form-label" for="facility">事業所名<span class="req">必須</span></label>
+                <div>
+                  <input class="form-control" type="text" id="facility" name="facility" required placeholder="例：にこにこルーム中央">
+                </div>
+              </div>
+              <div class="form-row">
+                <label class="form-label" for="region">地区<span class="req">必須</span></label>
+                <div>
+                  <select class="form-select" id="region" name="region" required>
+                    <option value="">選択してください</option>
+                    <option value="札幌">札幌</option>
+                    <option value="旭川">旭川</option>
+                    <option value="その他">その他</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row">
+                <label class="form-label" for="role">募集職種<span class="req">必須</span></label>
+                <div>
+                  <select class="form-select" id="role" name="role" required>
+                    <option value="">選択してください</option>
+                    <option value="児童指導員">児童指導員</option>
+                    <option value="保育士">保育士</option>
+                    <option value="児発管">児童発達支援管理責任者</option>
+                    <option value="調理">調理</option>
+                    <option value="事務">事務</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row">
+                <label class="form-label" for="employment">雇用形態<span class="req">必須</span></label>
+                <div>
+                  <select class="form-select" id="employment" name="employment" required>
+                    <option value="">選択してください</option>
+                    <option value="正社員">正社員</option>
+                    <option value="パート">パート</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row">
+                <label class="form-label" for="period-start">掲載開始日<span class="req">必須</span></label>
+                <div>
+                  <input class="form-control" type="date" id="period-start" name="period_start" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <label class="form-label" for="period-end">掲載終了日<span class="req">必須</span></label>
+                <div>
+                  <input class="form-control" type="date" id="period-end" name="period_end" required>
+                  <p class="form-hint">終了日を過ぎると自動的に非公開となります。</p>
+                </div>
+              </div>
+              <div class="form-row">
+                <label class="form-label" for="description">求人内容<span class="req">必須</span></label>
+                <div>
+                  <textarea class="form-textarea" id="description" name="description" required placeholder="仕事内容、給与、勤務時間、応募資格、連絡先など"></textarea>
+                </div>
+              </div>
+              <div class="form-row">
+                <label class="form-label" for="contact">担当者連絡先<span class="req">必須</span></label>
+                <div>
+                  <input class="form-control" type="text" id="contact" name="contact" required placeholder="氏名、電話番号、メールアドレス">
+                </div>
+              </div>
+              <div class="form-row">
+                <span class="form-label">同意確認<span class="req">必須</span></span>
+                <div>
+                  <label class="form-check">
+                    <input type="checkbox" name="consent" required>
+                    <span>掲載内容が正確であること、および児発連の求人情報掲載規約に同意します。</span>
+                  </label>
+                </div>
+              </div>
+              <div class="form-actions">
+                <button class="btn btn-primary" type="submit">投稿内容を送信する</button>
+                <button class="btn btn-ghost" type="reset">入力内容をクリア</button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer id="site-footer" class="site-footer"></footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

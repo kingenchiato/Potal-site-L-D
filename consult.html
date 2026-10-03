@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>専門家相談フォーム｜児発連</title>
+  <meta name="description" content="児発連加盟事業所向けの専門家相談フォーム。行政手続、事業承継、労務・税務・法務など、カテゴリー別に相談を受け付けます。">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="site-header" class="site-header"></header>
+
+  <main>
+    <section class="hero hero--compact" aria-label="ページ見出し">
+      <div class="hero__inner">
+        <h1 class="hero__title">専門家相談フォーム</h1>
+        <p class="hero__lead">オフィシャルパートナーへの相談を、児発連事務局がお取次ぎします。</p>
+      </div>
+    </section>
+
+    <div class="page-wrap">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="パンくずリスト">
+          <ol>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="partners.html">オフィシャルパートナー</a></li>
+            <li>専門家相談フォーム</li>
+          </ol>
+        </nav>
+
+        <div class="page-title">
+          <h1>専門家相談フォーム</h1>
+          <p>相談内容に応じ、児発連事務局が適切なオフィシャルパートナーへ振り分けます。</p>
+        </div>
+
+        <section class="reveal" style="max-width:860px;margin:0 auto;">
+          <div class="alert alert-info">
+            ご入力いただいた内容は、児発連事務局にて確認のうえ、該当する専門家（オフィシャルパートナー）へ情報提供いたします。事務局から折り返しご連絡いたしますので、通常5営業日以内を目安にお待ちください。
+          </div>
+
+          <div class="panel">
+            <div data-form-msg class="alert" hidden role="status"></div>
+
+            <form class="form-stack" data-validate data-success="相談内容を受け付けました。事務局にて確認のうえ、該当する専門家へ振り分け、担当よりご連絡いたします。（デモ画面）">
+              <fieldset style="border:0;margin:0;padding:0;">
+                <legend class="form-label" style="display:block;margin-bottom:12px;padding:0;">相談カテゴリー<span class="req">必須</span></legend>
+                <div class="consult-grid">
+                  <label class="consult-opt">
+                    <input type="radio" name="category" value="行政手続・運営指導" required>
+                    <h3>行政手続・運営指導</h3>
+                    <p>指定申請、変更届、運営指導対応など</p>
+                  </label>
+                  <label class="consult-opt">
+                    <input type="radio" name="category" value="事業承継・M&A">
+                    <h3>事業承継・M&amp;A</h3>
+                    <p>後継者不在、法人再編、売買など</p>
+                  </label>
+                  <label class="consult-opt">
+                    <input type="radio" name="category" value="社労士相談">
+                    <h3>社労士相談</h3>
+                    <p>就業規則、労務管理、社会保険など</p>
+                  </label>
+                  <label class="consult-opt">
+                    <input type="radio" name="category" value="税理士相談">
+                    <h3>税理士相談</h3>
+                    <p>法人税、経理、資金計画など</p>
+                  </label>
+                  <label class="consult-opt">
+                    <input type="radio" name="category" value="司法書士相談">
+                    <h3>司法書士相談</h3>
+                    <p>登記、契約書、相続・遺言など</p>
+                  </label>
+                  <label class="consult-opt">
+                    <input type="radio" name="category" value="弁護士相談">
+                    <h3>弁護士相談</h3>
+                    <p>契約トラブル、労働問題、法務全般</p>
+                  </label>
+                </div>
+              </fieldset>
+
+              <div class="form-row" style="margin-top:20px;">
+                <label class="form-label" for="org">事業所名・法人名<span class="req">必須</span></label>
+                <div>
+                  <input class="form-control" type="text" id="org" name="org" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <label class="form-label" for="name">ご担当者名<span class="req">必須</span></label>
+                <div>
+                  <input class="form-control" type="text" id="name" name="name" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <label class="form-label" for="email">メールアドレス<span class="req">必須</span></label>
+                <div>
+                  <input class="form-control" type="email" id="email" name="email" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <label class="form-label" for="tel">電話番号<span class="req">必須</span></label>
+                <div>
+                  <input class="form-control" type="tel" id="tel" name="tel" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <label class="form-label" for="detail">相談内容<span class="req">必須</span></label>
+                <div>
+                  <textarea class="form-textarea" id="detail" name="detail" required placeholder="ご相談の背景、具体的な内容、希望する対応時期など"></textarea>
+                </div>
+              </div>
+              <div class="form-row">
+                <span class="form-label">同意確認<span class="req">必須</span></span>
+                <div>
+                  <label class="form-check">
+                    <input type="checkbox" name="consent" required>
+                    <span>個人情報・情報提供に関する同意確認に同意します。入力内容が児発連事務局および該当するオフィシャルパートナーへ提供されることに同意します。</span>
+                  </label>
+                  <p class="form-hint"><a href="privacy.html">プライバシーポリシー</a>もあわせてご確認ください。</p>
+                </div>
+              </div>
+              <div class="form-actions">
+                <button class="btn btn-primary" type="submit">相談内容を送信する</button>
+                <button class="btn btn-ghost" type="reset">入力内容をクリア</button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer id="site-footer" class="site-footer"></footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

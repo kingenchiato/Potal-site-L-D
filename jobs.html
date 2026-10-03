@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>求人検索｜児発連</title>
+  <meta name="description" content="北海道内の児童発達支援・放課後等デイサービス事業所の求人情報を、地区・職種・雇用形態から検索できます。">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="site-header" class="site-header"></header>
+
+  <main>
+    <section class="hero hero--compact" aria-label="ページ見出し">
+      <div class="hero__inner">
+        <h1 class="hero__title">求人検索</h1>
+        <p class="hero__lead">児童発達支援・放課後等デイサービスの現場で働く方を、北海道内の加盟事業所が募集しています。</p>
+      </div>
+    </section>
+
+    <div class="page-wrap">
+      <div class="container layout-2col">
+        <div class="main-col">
+          <nav class="breadcrumb" aria-label="パンくずリスト">
+            <ol>
+              <li><a href="index.html">HOME</a></li>
+              <li>求人検索</li>
+            </ol>
+          </nav>
+
+          <section class="reveal">
+            <div class="page-title">
+              <h1>求人を探す</h1>
+              <p>加盟事業所による求人情報です。掲載期間終了後は自動的に非公開となります。</p>
+            </div>
+
+            <form id="job-filter" class="filter-bar" action="#" method="get">
+              <label>
+                地区
+                <select class="form-select" name="region">
+                  <option value="">すべて</option>
+                  <option value="札幌">札幌</option>
+                  <option value="旭川">旭川</option>
+                  <option value="その他">その他</option>
+                </select>
+              </label>
+              <label>
+                職種
+                <select class="form-select" name="role">
+                  <option value="">すべて</option>
+                  <option value="児童指導員">児童指導員</option>
+                  <option value="保育士">保育士</option>
+                  <option value="児発管">児童発達支援管理責任者</option>
+                  <option value="調理">調理</option>
+                  <option value="事務">事務</option>
+                </select>
+              </label>
+              <label>
+                雇用形態
+                <select class="form-select" name="type">
+                  <option value="">すべて</option>
+                  <option value="正社員">正社員</option>
+                  <option value="パート">パート</option>
+                </select>
+              </label>
+              <label>
+                キーワード
+                <input class="form-control" type="search" name="q" placeholder="事業所名・職種など">
+              </label>
+              <button class="btn btn-primary" type="submit">検索</button>
+            </form>
+
+            <p id="job-empty" class="alert" hidden>条件に一致する求人が見つかりませんでした。検索条件を変更してお試しください。</p>
+
+            <ul id="job-list" class="list-rows">
+              <li data-job data-region="札幌" data-role="児童指導員" data-type="正社員">
+                <a class="list-row" href="job-detail.html">
+                  <span class="list-row__meta">札幌市中央区</span>
+                  <span>
+                    <h3 class="list-row__title">児童指導員・保育士（放課後等デイサービス）</h3>
+                    <p class="list-row__place"><span class="tag tag-hou">放デイ</span><span class="tag tag-full">正社員</span> にこにこルーム中央</p>
+                  </span>
+                  <span class="list-row__arrow">詳細 ›</span>
+                </a>
+              </li>
+              <li data-job data-region="旭川" data-role="児発管" data-type="正社員">
+                <a class="list-row" href="job-detail.html">
+                  <span class="list-row__meta">旭川市</span>
+                  <span>
+                    <h3 class="list-row__title">児童発達支援管理責任者候補</h3>
+                    <p class="list-row__place"><span class="tag tag-ji">児発</span><span class="tag tag-full">正社員</span> あさひ療育センター</p>
+                  </span>
+                  <span class="list-row__arrow">詳細 ›</span>
+                </a>
+              </li>
+              <li data-job data-region="札幌" data-role="調理" data-type="パート">
+                <a class="list-row" href="job-detail.html">
+                  <span class="list-row__meta">札幌市豊平区</span>
+                  <span>
+                    <h3 class="list-row__title">パート調理員・補助スタッフ</h3>
+                    <p class="list-row__place"><span class="tag tag-hou">放デイ</span><span class="tag tag-part">パート</span> みらいキッズ豊平</p>
+                  </span>
+                  <span class="list-row__arrow">詳細 ›</span>
+                </a>
+              </li>
+              <li data-job data-region="札幌" data-role="保育士" data-type="正社員">
+                <a class="list-row" href="job-detail.html">
+                  <span class="list-row__meta">札幌市北区</span>
+                  <span>
+                    <h3 class="list-row__title">保育士（児童発達支援）</h3>
+                    <p class="list-row__place"><span class="tag tag-ji">児発</span><span class="tag tag-full">正社員</span> さくら療育センター</p>
+                  </span>
+                  <span class="list-row__arrow">詳細 ›</span>
+                </a>
+              </li>
+              <li data-job data-region="その他" data-role="事務" data-type="パート">
+                <a class="list-row" href="job-detail.html">
+                  <span class="list-row__meta">函館市</span>
+                  <span>
+                    <h3 class="list-row__title">事務補助（週3日〜）</h3>
+                    <p class="list-row__place"><span class="tag tag-ji">児発</span><span class="tag tag-part">パート</span> 函館みなと児童発達支援</p>
+                  </span>
+                  <span class="list-row__arrow">詳細 ›</span>
+                </a>
+              </li>
+              <li data-job data-region="旭川" data-role="児童指導員" data-type="パート">
+                <a class="list-row" href="job-detail.html">
+                  <span class="list-row__meta">旭川市</span>
+                  <span>
+                    <h3 class="list-row__title">児童指導員（放デイ・夕方シフト）</h3>
+                    <p class="list-row__place"><span class="tag tag-hou">放デイ</span><span class="tag tag-part">パート</span> 北の杜放課後クラブ</p>
+                  </span>
+                  <span class="list-row__arrow">詳細 ›</span>
+                </a>
+              </li>
+              <li data-job data-region="その他" data-role="児童指導員" data-type="正社員">
+                <a class="list-row" href="job-detail.html">
+                  <span class="list-row__meta">帯広市</span>
+                  <span>
+                    <h3 class="list-row__title">児童指導員（未経験者歓迎）</h3>
+                    <p class="list-row__place"><span class="tag tag-hou">放デイ</span><span class="tag tag-full">正社員</span> 帯広ステップ放デイ</p>
+                  </span>
+                  <span class="list-row__arrow">詳細 ›</span>
+                </a>
+              </li>
+            </ul>
+
+            <div class="panel panel--note" style="margin-top:20px;">
+              <p class="lead-copy" style="margin:0;">加盟事業所の方は<a href="job-post.html">求人投稿フォーム</a>より掲載のご依頼が可能です。事務局確認・承認後に公開されます。</p>
+            </div>
+          </section>
+        </div>
+
+        <div id="site-sidebar"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer id="site-footer" class="site-footer"></footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

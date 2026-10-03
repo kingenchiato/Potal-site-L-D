@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>会員ページ｜児発連</title>
+  <meta name="description" content="児発連会員専用ページ。会員向けお知らせ、研修情報、制度情報、会議資料へのショートカットを掲載しています。">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="site-header" class="site-header"></header>
+
+  <main>
+    <section class="hero hero--compact" aria-label="ページ見出し">
+      <div class="hero__inner">
+        <h1 class="hero__title">会員ページ</h1>
+        <p class="hero__lead">加盟事業所向けの情報・資料を掲載しています。</p>
+      </div>
+    </section>
+
+    <div class="page-wrap">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="パンくずリスト">
+          <ol>
+            <li><a href="index.html">HOME</a></li>
+            <li>会員ページ</li>
+          </ol>
+        </nav>
+
+        <div class="member-shell reveal">
+          <nav class="member-nav" aria-label="会員メニュー">
+            <div class="member-nav__head">会員メニュー</div>
+            <a href="member.html" class="is-current" aria-current="page">会員TOP</a>
+            <a href="member-docs.html">会議資料・各種様式</a>
+            <a href="member-training.html">研修・講演会・制度情報</a>
+            <a href="jobs.html">求人を探す</a>
+            <a href="job-post.html">求人を掲載する</a>
+            <a href="index.html">ログアウト</a>
+          </nav>
+
+          <div class="main-col">
+            <div class="page-title">
+              <h1>会員ページTOP</h1>
+              <p>児発連加盟事業所の皆さま向けの情報ポータルです。</p>
+            </div>
+
+            <div class="sec-head">
+              <h2>会員向けお知らせ</h2>
+              <a class="more" href="activity.html">一覧へ</a>
+            </div>
+            <ul class="news-list">
+              <li>
+                <a class="news-item" href="activity-detail.html">
+                  <span class="news-item__date">2026.09.18</span>
+                  <span class="news-item__cat is-admin">事務局</span>
+                  <span class="news-item__body">
+                    <h3>求人情報の掲載受付を開始しました</h3>
+                    <p>加盟事業所による求人投稿→事務局確認・承認→公開の流れで運用します。</p>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a class="news-item" href="activity-detail.html">
+                  <span class="news-item__date">2026.09.02</span>
+                  <span class="news-item__cat is-train">研修</span>
+                  <span class="news-item__body">
+                    <h3>札幌地区 秋季研修会のご案内</h3>
+                    <p>会員向け資料を<a href="member-training.html">研修ページ</a>に掲載しました。</p>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a class="news-item" href="activity-detail.html">
+                  <span class="news-item__date">2026.08.15</span>
+                  <span class="news-item__cat is-admin">事務局</span>
+                  <span class="news-item__body">
+                    <h3>令和8年度 会費納入のご案内</h3>
+                    <p>納入期限・振込先は会議資料をご確認ください。</p>
+                  </span>
+                </a>
+              </li>
+            </ul>
+
+            <div class="sec-head sec-head--sage" style="margin-top:28px;">
+              <h2>研修・講演会</h2>
+              <a class="more" href="member-training.html">詳細へ</a>
+            </div>
+            <div class="panel">
+              <ul class="list-rows" style="border:0;">
+                <li style="border-bottom:1px solid var(--line-soft);">
+                  <div class="list-row" style="grid-template-columns:100px minmax(0,1fr);">
+                    <span class="list-row__meta">2026.10.24</span>
+                    <span>
+                      <h3 class="list-row__title">札幌地区 秋季研修会</h3>
+                      <p class="list-row__place">制度改正対応と現場実践／会場：札幌市民交流センター</p>
+                    </span>
+                  </div>
+                </li>
+                <li style="border-bottom:1px solid var(--line-soft);">
+                  <div class="list-row" style="grid-template-columns:100px minmax(0,1fr);">
+                    <span class="list-row__meta">2026.11.15</span>
+                    <span>
+                      <h3 class="list-row__title">旭川地区 人材確保セミナー</h3>
+                      <p class="list-row__place">採用・定着のポイント／オンライン参加可</p>
+                    </span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div class="sec-head" style="margin-top:28px;">
+              <h2>制度情報・ショートカット</h2>
+            </div>
+            <div class="feature-grid">
+              <article>
+                <h3><a href="member-docs.html">会議資料</a></h3>
+                <p>総会・理事会資料、議事録、報告書をダウンロードできます。</p>
+              </article>
+              <article>
+                <h3><a href="member-docs.html">各種様式</a></h3>
+                <p>届出書類、報告書フォーマット、申請書類一式。</p>
+              </article>
+              <article>
+                <h3><a href="member-training.html">行政制度情報</a></h3>
+                <p>報酬改定、加算、運営指導に関する最新情報と解説資料。</p>
+              </article>
+            </div>
+
+            <div class="btn-row">
+              <a class="btn btn-primary" href="job-post.html">求人を掲載する</a>
+              <a class="btn" href="consult.html">専門家に相談する</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer id="site-footer" class="site-footer"></footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>お問い合わせ｜児発連</title>
+  <meta name="description" content="児発連事務局へのお問い合わせフォーム。入会、掲載、研修、求人、その他ご質問はこちらから。SSL暗号化通信に対応しています。">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="site-header" class="site-header"></header>
+
+  <main>
+    <div class="page-wrap">
+      <div class="container layout-2col">
+        <div class="main-col">
+          <nav class="breadcrumb" aria-label="パンくずリスト">
+            <ol>
+              <li><a href="index.html">HOME</a></li>
+              <li>お問い合わせ</li>
+            </ol>
+          </nav>
+
+          <div class="page-title">
+            <h1>お問い合わせ</h1>
+            <p>児発連事務局へのご連絡・ご質問はこちらのフォームよりお送りください</p>
+          </div>
+
+          <section class="reveal">
+            <div class="panel panel--soft">
+              <p class="lead-copy" style="margin:0;">
+                入会のご相談、サイト掲載に関するお問い合わせ、研修・イベントについて、その他児発連の活動に関するご質問を受け付けています。内容を確認のうえ、通常3営業日以内に事務局よりご返信いたします。お急ぎの場合はお電話（011-000-0000／平日9:00〜17:00）もご利用ください。
+              </p>
+            </div>
+          </section>
+
+          <section class="reveal">
+            <div class="sec-head">
+              <h2>お問い合わせフォーム</h2>
+            </div>
+            <div class="panel">
+              <div class="alert alert-info" style="margin-bottom:18px;">
+                本フォームはSSL暗号化通信（HTTPS）に対応しています。送信いただいた個人情報は、<a href="privacy.html">プライバシーポリシー</a>に基づき適切に取り扱います。
+              </div>
+
+              <form class="form-stack" data-validate data-success="お問い合わせを受け付けました。確認のうえ事務局よりご連絡いたします。">
+                <div class="form-row">
+                  <label class="form-label" for="contact-name">お名前<span class="req">必須</span></label>
+                  <div>
+                    <input class="form-control" type="text" id="contact-name" name="name" required autocomplete="name" placeholder="例：山田 太郎">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <label class="form-label" for="contact-phone">電話番号<span class="req">必須</span></label>
+                  <div>
+                    <input class="form-control" type="tel" id="contact-phone" name="phone" required autocomplete="tel" placeholder="例：011-000-0000">
+                    <p class="form-hint">日中連絡の取りやすい番号をご入力ください。</p>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <label class="form-label" for="contact-email">メールアドレス<span class="req">必須</span></label>
+                  <div>
+                    <input class="form-control" type="email" id="contact-email" name="email" required autocomplete="email" placeholder="例：example@office.jp">
+                    <p class="form-hint">返信先として使用します。入力間違いにご注意ください。</p>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <label class="form-label" for="contact-org">事業所名<span class="opt">任意</span></label>
+                  <div>
+                    <input class="form-control" type="text" id="contact-org" name="org" autocomplete="organization" placeholder="加盟事業所・関係機関の方はご記入ください">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <label class="form-label" for="contact-subject">お問い合わせ種別<span class="req">必須</span></label>
+                  <div>
+                    <select class="form-select" id="contact-subject" name="subject" required>
+                      <option value="">選択してください</option>
+                      <option value="join">入会について</option>
+                      <option value="member">会員・ログインについて</option>
+                      <option value="office">事業所掲載について</option>
+                      <option value="job">求人掲載について</option>
+                      <option value="training">研修・イベントについて</option>
+                      <option value="consult">専門家相談について</option>
+                      <option value="other">その他</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <label class="form-label" for="contact-body">お問い合わせ内容<span class="req">必須</span></label>
+                  <div>
+                    <textarea class="form-textarea" id="contact-body" name="body" required placeholder="ご質問・ご要望を具体的にご記入ください"></textarea>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <span class="form-label">個人情報の取扱い</span>
+                  <div>
+                    <label class="form-check">
+                      <input type="checkbox" name="consent" required>
+                      <span><a href="privacy.html" target="_blank" rel="noopener">プライバシーポリシー</a>に同意のうえ、入力内容を送信します。</span>
+                    </label>
+                  </div>
+                </div>
+                <div data-form-msg hidden class="alert" role="status"></div>
+                <div class="form-actions">
+                  <button type="submit" class="btn btn-primary btn-block">送信する</button>
+                </div>
+              </form>
+            </div>
+          </section>
+
+          <section class="reveal">
+            <div class="sec-head">
+              <h2>事務局連絡先</h2>
+            </div>
+            <div class="panel">
+              <table class="data-table">
+                <tbody>
+                  <tr>
+                    <th>法人名</th>
+                    <td>一般社団法人 児童発達支援連絡協議会（児発連）事務局</td>
+                  </tr>
+                  <tr>
+                    <th>所在地</th>
+                    <td>北海道札幌市中央区（詳細は返信時にご案内）</td>
+                  </tr>
+                  <tr>
+                    <th>電話</th>
+                    <td>011-000-0000（平日 9:00〜17:00）</td>
+                  </tr>
+                  <tr>
+                    <th>受付時間</th>
+                    <td>平日 9:00〜17:00（土日祝・年末年始を除く）</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+        </div>
+
+        <div id="site-sidebar"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer id="site-footer" class="site-footer"></footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
